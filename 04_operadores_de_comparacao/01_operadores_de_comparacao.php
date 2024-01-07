@@ -9,6 +9,6 @@ echo "= (Atribuição) cuidado com if para não gerar erro <br>
 > (Maior que)<br>
 >= (Maior ou igual que) <br>
 < (Menor que) <br>
-<= (Menor ou igual que)" 
+<= (Menor ou igual que)"; 
 
 ?>

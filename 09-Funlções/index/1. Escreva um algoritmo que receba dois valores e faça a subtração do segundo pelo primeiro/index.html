@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1. Escreva um algoritmo que receba dois valores e faça a subtração do segundo pelo primeiro.</title>
+</head>
+<body>
+  <main>
+    <!--Titulo-->
+    <h1>1. Escreva um algoritmo que receba dois valores e faça a subtração do segundo pelo primeiro.</h1>
+    <!--Formulário (<form>) é criado com o método get, que enviará os dados para o arquivo calculo.php quando o formulário for enviado.-->
+    <form action="subtracao.php" method="get">
+      <!--Título para informar o dado que será coletado. Cada campo possui um rótulo (<label>) e um atributo for que associa o rótulo ao campo correspondente.-->
+      <label for="valor_01">Primeiro valor</label>
+      <!--Os campos de entrada com (<input type="number">) são fornecidos para que o usuário insira os valores.-->
+      <input type="number" name="valor_01" id="valor_01" value="1" min="-200" include> <!--required ou include-->
+      <!--Parágrafo-->
+      <p>O primeiro valor será subtraido pelo segundo</p>
+      
+      <label for="valor_02">Segundo valor</label>
+      
+      <input type="number" name="valor_02" id="valor_02" value="1" min="-200" required>
+      <p> <!--Quebra de linha--></p>
+      <!-- Esses valores são enviados para o arquivo calculo.php quando o formulário é submetido-->
+      <input type="submit" value="Calcular">
+    </form>
+  </main>
+  <button onclick="history.go(-1);">Voltar</button>
+</body>
+</html>

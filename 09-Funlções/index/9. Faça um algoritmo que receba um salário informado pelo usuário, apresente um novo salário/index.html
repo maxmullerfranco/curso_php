@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9. Faça um algoritmo que receba um salário informado pelo usuário, apresente um novo salário com o aumento de 21%.</title>
+</head>
+<body>
+  <h1>9. Faça um algoritmo que receba um salário informado pelo usuário, apresente um novo salário com o aumento de 21%.</h1>
+  <main>
+    <!--Formulário (<form>) é criado com o método get, que enviará os dados para o arquivo calculo.php quando o formulário for enviado.-->
+    <form action="calcular.php" method="get">
+      <!--Título para informar o dado que será coletado. Cada campo possui um rótulo (<label>) e um atributo for que associa o rótulo ao campo correspondente.-->
+      <label for="salario"><p>Coloque o valor do salário para ver o valor com aumento em porcentagem</p></label>
+      <!--Os campos de entrada com (<input type="number">) são fornecidos para que o usuário insira os valores.-->
+      <input type="number" name="salario" step="0.01" min="0.00" value="0.00" required>
+      <label for="porcentagem"><!--Parágrafo--><p>Coloque quantos porcento que almentar</p></label>
+      <input type="number" name="porcentagem" step="1" min="0" max="100" value="0" required>
+      <!-- Esses valores são enviados para o arquivo calculo.php quando o formulário é submetido-->
+      <button type="submit">Calcular</button>
+    </form>
+  </main>
+  <button onclick="history.go(-1);">Voltar</button>
+</body>
+</html>

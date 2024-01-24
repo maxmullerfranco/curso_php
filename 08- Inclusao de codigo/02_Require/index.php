@@ -1,6 +1,7 @@
 <p>Testando Require</p>
 <?php 
 //Require para chamar outro arquivo que está na mesma pasta
+// Porém caso tenha erro no sistema ele retorna um erro fatal é não roda o restante do programa.
 require "teste.php";
 ?>
 <!--Parágrafo em html-->

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7. Faça  um  programa  para  calcular  e  imprimir  um  salário  bruto  a  ser  recebido  por  um funcionário em um mês. O programa deve utilizar os seguintes dados: Número de horas que o funcionário trabalhou no mês e o valor recebido por hora de trabalho.</title>
+</head>
+<body>
+  <h1>7. Faça  um  programa  para  calcular  e  imprimir  um  salário  bruto  a  ser  recebido  por  um funcionário em um mês. O programa deve utilizar os seguintes dados: Número de horas que o funcionário trabalhou no mês e o valor recebido por hora de trabalho.</h1>
+  <main>
+    <!--Formulário (<form>) é criado com o método get, que enviará os dados para o arquivo calculo.php quando o formulário for enviado.-->
+    <form action="calcular.php" method="get">
+      <!--Título para informar o dado que será coletado. Cada campo possui um rótulo (<label>) e um atributo for que associa o rótulo ao campo correspondente.-->
+      <label for="valor_Hora">Qual o valor do seu salário por hora  ?</label>
+      <!--Os campos de entrada com (<input type="number">) são fornecidos para que o usuário insira os valores.-->
+      <input type="number" name="valor_Hora" value="12.50" step="0.01" required>
+      <p> <!--Quebra de linha--></p>
+      <label for="dia_01">Quantas horas trabalhou no dia 01 ?</label>
+      <input type="time" name="dia_01" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_02">Quantas horas trabalhou no dia 02 ?</label>
+      <input type="time" name="dia_02" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_03">Quantas horas trabalhou no dia 03 ?</label>
+      <input type="time" name="dia_03" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_04">Quantas horas trabalhou no dia 04 ?</label>
+      <input type="time" name="dia_04" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_05">Quantas horas trabalhou no dia 05 ?</label>
+      <input type="time" name="dia_05" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_06">Quantas horas trabalhou no dia 06 ?</label>
+      <input type="time" name="dia_06" value="04:00" step="00:00" required>
+      <p></p>
+      <label for="dia_07">Quantas horas trabalhou no dia 07 ?</label>
+      <input type="time" name="dia_07" value="00:00" step="00:00" required>
+      <p></p>
+      <label for="dia_08">Quantas horas trabalhou no dia 08 ?</label>
+      <input type="time" name="dia_08" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_09">Quantas horas trabalhou no dia 09 ?</label>
+      <input type="time" name="dia_09" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_10">Quantas horas trabalhou no dia 10 ?</label>
+      <input type="time" name="dia_10" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_11">Quantas horas trabalhou no dia 11 ?</label>
+      <input type="time" name="dia_11" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_12">Quantas horas trabalhou no dia 12 ?</label>
+      <input type="time" name="dia_12" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_13">Quantas horas trabalhou no dia 13 ?</label>
+      <input type="time" name="dia_13" value="04:00" step="00:00" required>
+      <p></p>
+      <label for="dia_14">Quantas horas trabalhou no dia 14 ?</label>
+      <input type="time" name="dia_14" value="00:00" step="00:00" required>
+      <p></p>
+      <label for="dia_15">Quantas horas trabalhou no dia 15 ?</label>
+      <input type="time" name="dia_15" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_16">Quantas horas trabalhou no dia 16 ?</label>
+      <input type="time" name="dia_16" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_17">Quantas horas trabalhou no dia 17 ?</label>
+      <input type="time" name="dia_17" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_18">Quantas horas trabalhou no dia 18 ?</label>
+      <input type="time" name="dia_18" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_19">Quantas horas trabalhou no dia 19 ?</label>
+      <input type="time" name="dia_19" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_20">Quantas horas trabalhou no dia 20 ?</label>
+      <input type="time" name="dia_20" value="04:00" step="00:00" required>
+      <p></p>
+      <label for="dia_21">Quantas horas trabalhou no dia 21 ?</label>
+      <input type="time" name="dia_21" value="00:00" step="00:00" required>
+      <p></p>
+      <label for="dia_22">Quantas horas trabalhou no dia 22 ?</label>
+      <input type="time" name="dia_22" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_23">Quantas horas trabalhou no dia 23 ?</label>
+      <input type="time" name="dia_23" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_24">Quantas horas trabalhou no dia 24 ?</label>
+      <input type="time" name="dia_24" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_25">Quantas horas trabalhou no dia 25 ?</label>
+      <input type="time" name="dia_25" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_26">Quantas horas trabalhou no dia 26 ?</label>
+      <input type="time" name="dia_26" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_27">Quantas horas trabalhou no dia 27 ?</label>
+      <input type="time" name="dia_27" value="04:00" step="00:00" required>
+      <p></p>
+      <label for="dia_28">Quantas horas trabalhou no dia 28 ?</label>
+      <input type="time" name="dia_28" value="00:00" step="00:00" required>
+      <p></p>
+      <label for="dia_29">Quantas horas trabalhou no dia 29 ?</label>
+      <input type="time" name="dia_29" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_30">Quantas horas trabalhou no dia 30 ?</label>
+      <input type="time" name="dia_30" value="08:00" step="00:00" required>
+      <p></p>
+      <label for="dia_31">Quantas horas trabalhou no dia 31 ?</label>
+      <input type="time" name="dia_31" value="08:00" step="00:00" required>
+      <p></p>
+      <!-- Esses valores são enviados para o arquivo calculo.php quando o formulário é submetido-->
+      <button onclick="submit">Calcular</button>
+    </form>
+  </main>
+  <button onclick="history.go(-1);">Voltar</button>
+</body>
+</html>

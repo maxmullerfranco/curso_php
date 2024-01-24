@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8. O lojão do brás está vendendo seus produtos em 5 prestações sem juros. Faça um algoritmo que receba o valor de uma compra e mostre o valor das prestações.</title>
+</head>
+<body>
+  <main>
+    <h1>8. O lojão do brás está vendendo seus produtos em 5 prestações sem juros. Faça um algoritmo que receba o valor de uma compra e mostre o valor das prestações.</h1>
+    <!--Formulário (<form>) é criado com o método get, que enviará os dados para o arquivo calculo.php quando o formulário for enviado.-->
+    <form action="calcular.php" method="get">
+      <!--Título para informar o dado que será coletado. Cada campo possui um rótulo (<label>) e um atributo for que associa o rótulo ao campo correspondente.-->
+      <label for="compra"><p>Coloque o valor da compra por gentileza</p></label>
+      <!--Os campos de entrada com (<input type="number">) são fornecidos para que o usuário insira os valores.-->
+      <input type="number" name="compra" step="0.01" min="0.00" value="0.00" required>
+      <label for="quantidade_de_parcela"><p><!--Parágrafo-->Coloque em quantas parcelas gostaria de dividir por gentileza. No máximo em 5 vezes</p></label>
+      <input type="number" name="quantidade_de_parcela" step="1" min="1" max="5" value="1" required>
+      <!-- Esses valores são enviados para o arquivo calculo.php quando o formulário é submetido-->
+      <button type="submit">Calcular</button>
+    </form>
+  </main>
+  <button onclick="history.go(-1);">Voltar</button>
+</body>
+</html>

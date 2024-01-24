@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3. Escreva um programa que calcule e informe ao usuário o valor a ser pago em uma loja, recebendo como entradas, o preço do produto e o número de unidades compradas.</title>
+</head>
+<body>
+  <h1>3. Escreva um programa que calcule e informe ao usuário o valor a ser pago em uma loja, recebendo como entradas, o preço do produto e o número de unidades compradas.</h1>
+    <main>
+      <!--Formulário (<form>) é criado com o método get, que enviará os dados para o arquivo calculo.php quando o formulário for enviado.-->
+      <form action="calculo.php" method="get">
+        <!--Título para informar o dado que será coletado. Cada campo possui um rótulo (<label>) e um atributo for que associa o rótulo ao campo correspondente.-->
+        <label for="produto">Quantos produtos?</label>
+        <p> <!--Quebra de linha--></p>
+        <!--Os campos de entrada com (<input type="number">) são fornecidos para que o usuário insira os valores.-->
+        <input type="number" name="produto" min="0" step="1" value="1" required>
+        <p> <!--Quebra de linha--></p>
+        <label for="preco">Qual valor do produto?</label>
+        <p> <!--Quebra de linha--></p>
+        <input type="number" name="preco" min="0" value="1" step="0.01" required>
+        <p> <!--Quebra de linha--></p>
+        <!-- Esses valores são enviados para o arquivo calculo.php quando o formulário é submetido-->
+        <input type="submit" value="Cacular">
+      </form>
+    </main>
+    <button onclick="history.go(-1);">Voltar</button>
+</body>
+</html>

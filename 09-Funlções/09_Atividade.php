@@ -11,12 +11,12 @@ function sum_Even_Numbers($n) {
   $num = 0;
   for ($i = 1; $i <= $n; $i++) {
       if ($i % 2 === 0) {
-          $num += $i;
+        echo "<br> Teste <br>" . $num += $i;
       }
   }
   return $num;
 }
 $numero = 10;
 $resultado = sum_Even_Numbers($numero);
-echo "A soma dos números pares até $numero é: $resultado";
+echo "<br> A soma dos números pares até $numero é: $resultado";
 ?>
